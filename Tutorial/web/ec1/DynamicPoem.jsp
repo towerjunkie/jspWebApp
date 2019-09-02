@@ -14,9 +14,9 @@
     <body>
         <h2>Constant Reader</h2>
         <p>
-           “You just couldn't get hold of the things you had done and turn them right again.<br>
-           Such power might be given to the gods, but it was not given to men and women - that was probably a good thing.<br>
-           Had it been otherwise, people would die of old age still trying to rewrite their teens."<br>
+           “You just couldn't get hold of the things you had done and turn them right again.
+           Such power might be given to the gods, but it was not given to men and women - that was probably a good thing.
+           Had it been otherwise, people would die of old age still trying to rewrite their teens."
            -Stephen King
         </p>
         
