@@ -21,14 +21,16 @@
         </p>
         
         <form>
-            
+            Finish the poem below with a final line<br>
+            Last line of poem:<input type="text" value="Don't ruin it" name="lastline">
+            <input type="Submit" value="Add last line" name="buttonLastline">
         </form>
         
         <p>
             See the turtle of enormous girth<br>
             On his shell he holds the earth.<br>
             If you want to run and play,<br>
-            come along the beam today.
+            ${param.lastline}
             
         </p>
            
