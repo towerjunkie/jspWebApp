@@ -14,7 +14,7 @@
     <body>
         <h1>Hello World!</h1>
         <p>
-        <a href="../">Return to Index Page</a>
+        <a href="../">Return to Index </a>
         </p>
     </body>
 </html>
