@@ -12,13 +12,12 @@
         <title>Dynamic Poem</title>
     </head>
     <body>
-        <h1>Constant Reader</h1>
+        <h2>Constant Reader</h2>
         <p>
-           “You just couldn't get hold of the things you had done and turn them 
-           right again.<br>Such power might be given to the gods, but it was not
-           given to men and women - that was probably a good thing.<br>Had it been
-           otherwise, people would die of old age still trying to rewrite their teens."
-           <br>-Stephen King
+           “You just couldn't get hold of the things you had done and turn them right again.<br>
+           Such power might be given to the gods, but it was not given to men and women - that was probably a good thing.<br>
+           Had it been otherwise, people would die of old age still trying to rewrite their teens."<br>
+           -Stephen King
         </p>
         
         <form>
@@ -26,6 +25,10 @@
         </form>
         
         <p>
+            See the turtle of enormous girth<br>
+            On his shell he holds the earth.<br>
+            If you want to run and play,<br>
+            come along the beam today.
             
         </p>
            
