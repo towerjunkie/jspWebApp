@@ -1,0 +1,2 @@
+# NetBeans
+.gitignore for NetBeans
