@@ -35,7 +35,7 @@
         </p>
            
         <p>
-        <a href="../">Return to Index </a>
+        <a href="../">Index Page</a>
         </p>
         
     </body>
