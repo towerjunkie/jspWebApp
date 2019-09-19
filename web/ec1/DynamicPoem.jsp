@@ -11,7 +11,7 @@
         <meta charset=UTF-8>
         <title>Dynamic Poem</title>
           <link rel="stylesheet"
-              href="../styles/tutorialStyle.css"
+              href="/Tutorials/styles/tutorialStyle.css"
               type="text/css">
     </head>
     <body>
