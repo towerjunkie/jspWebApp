@@ -10,6 +10,9 @@
     <head>
         <meta charset=UTF-8>
         <title>Dynamic Poem</title>
+          <link rel="stylesheet"
+              href="../styles/tutorialStyle.css"
+              type="text/css">
     </head>
     <body>
         <h2>Constant Reader</h2>
