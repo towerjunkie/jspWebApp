@@ -18,6 +18,8 @@
         <h3>Extra Credit</h3>
         <p>
         <a href="ec1/DynamicPoem.jsp">Extra Credit 1</a>
+        <br>
+        <a href="ch2/TwoPages/Simple/Edit.jsp">Edit Hobby Page</a>
         </p>
     </body>
 </html>

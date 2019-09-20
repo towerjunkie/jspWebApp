@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>First JSP</title>
+     <link rel="stylesheet"
+              href="/Tutorials/styles/tutorialStyle.css"
+              type="text/css">
   </head>
   <body>
     <form>
