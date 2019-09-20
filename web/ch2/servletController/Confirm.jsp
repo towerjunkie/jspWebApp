@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Confirmation Page with Edit/Process Options</title>
+       <link rel="stylesheet"
+              href="/Tutorials/styles/tutorialStyle.css"
+              type="text/css">
   </head>
   <body>
      <p>The value of the hobby that was sent to 
@@ -11,7 +14,7 @@
       If there is an error, please select <em>Edit</em>, 
       otherwise please select <em>Process</em>. 
     
-    <form action="Controller.jsp">
+    <form action="Controller">
       <p>
         <input type="hidden" name="hobby" 
                              value="${param.hobby}">
