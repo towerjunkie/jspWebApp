@@ -11,7 +11,9 @@
     <body>
         <h2>My First Website</h2>
         <p>
-            A small site made for the purpose of creating my first website for CGS4854 along with playing around with version control. Is this 25 words? 
+            A small site made for the purpose of creating my first website for 
+            CGS4854 along with playing around with version control. Is this 25 words? <br>
+            Note - This is the .jsp page.
         </p>
         <h3>Extra Credit</h3>
         <p>
