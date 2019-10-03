@@ -3,11 +3,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Process </title>
+        <link rel="stylesheet"
+              href="/dllan011/Styles/Styles.css"
+              type="text/css">
     </head>
     <body>
-        <p>This is the Process page</p>
+        <p>Process Page</p>
 
-        The values that will be processed are  <strong>${helper.data.hobby}</strong> and <strong>${helper.data.name}</strong>
+        We will process your values of <strong>${helper.data.hobby}</strong> and <strong>${helper.data.name}</strong>
         <form action="Controller">
             <input type="hidden" name="name" 
                    value="${helper.data.name}">

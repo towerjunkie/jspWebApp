@@ -3,18 +3,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Confirm page</title>
+        <link rel="stylesheet"
+              href="/dllan011/Styles/Styles.css"
+              type="text/css">
     </head>
     <body>
-        <p>This is the confirm page for Two Pages Folder</p>
+        <p>Confirm</p>
         <br>
-        The name that was sent from edit page was <strong>${helper.data.hobby}.</strong> <br>
-        The hobby that was sent from edit page was <strong>${helper.data.name}.</strong> 
+        Your name is  <strong>${helper.data.hobby}.</strong> <br>
+        Your hobby is <strong>${helper.data.name}.</strong> 
         <form action ="Controller">
 
             <p></p>
-            <em> If there is an error please press the "EDIT" button</em>
+            <em> Press edit to go back</em>
             <p></p>
-            <em> If everything is good press Process </em>
+            <em> Press process to confirm </em>
             <p></p>
             <br>
             <input type="hidden" name="name" value="${helper.data.name}">
