@@ -22,11 +22,11 @@ public class Controller extends HttpServlet {
         String address;
 
         if (request.getParameter("processButton") != null) {
-            address = "process.jsp";
+            address = "/javaServerPages/process.jsp";
         } else if (request.getParameter("confirmButton") != null) {
-            address = "confirm.jsp";
+            address = "/javaServerPages/confirm.jsp";
         } else {
-            address = "edit.jsp";
+            address = "/javaServerPages/edit.jsp";
         }
 
         RequestDispatcher dispatcher
