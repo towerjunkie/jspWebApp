@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-         <a href="/reorganized/Controller">Homework 1</a>
-          <br>
+        <a href="/defaultValidate/Controller">Homework 1</a>
+        <br>
     </body>
 </html>
