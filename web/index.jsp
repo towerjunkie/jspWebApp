@@ -1,25 +1,19 @@
+<%-- 
+    Document   : index
+    Created on : Oct 2, 2019, 11:35:38 PM
+    Author     : dllan
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My First Website</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"
-              href="/Tutorials/styles/tutorialStyle.css"
-              type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
     </head>
     <body>
-        <h2>My First Website</h2>
-        <p>
-            A small site made for the purpose of creating my first website for 
-            CGS4854 along with playing around with version control. Is this 25 words? <br>
-            Note - This is the .jsp page.
-        </p>
-        <h3>Extra Credit</h3>
-        <p>
-        <a href="ec1/DynamicPoem.jsp">Extra Credit 1</a>
-        <br>
-        <a href="ch2/servletController/Controller">Servlet Controller</a>
-        </p>
+        <h1>Hello World!</h1>
+         <a href="/reorganized/Controller">Homework 1</a>
+          <br>
     </body>
 </html>

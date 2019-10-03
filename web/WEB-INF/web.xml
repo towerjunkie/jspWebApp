@@ -1,36 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	 version="3.1">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    
+    
     <servlet>
         <servlet-name>
-            Ch2Controller
+            defaultValidate
         </servlet-name>
         <servlet-class>
-            ch2.servletController.Controller
+            defaultValidate.Controller
         </servlet-class>
     </servlet>
     <servlet-mapping>
-         <servlet-name>
-            Ch2Controller
+        <servlet-name>
+            defaultValidate
         </servlet-name>
         <url-pattern>
-             /ch2/servletController/Controller
+            /defaultValidate/Controller
         </url-pattern>
     </servlet-mapping>
-    <welcome-file-list>
-        <welcome-file>
-            index.jsp
-        </welcome-file>
-        <welcome-file>
-            index.html
-        </welcome-file>
-    </welcome-file-list>
+  
+  
+    <servlet>
+        <servlet-name>
+            reorganized
+        </servlet-name>
+        <servlet-class>
+            reorganized.Controller
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>
+            reorganized
+        </servlet-name>
+        <url-pattern>
+            /reorganized/Controller
+        </url-pattern>
+    </servlet-mapping>
+  
+  
+    <servlet>
+        <servlet-name>
+            dataBean
+        </servlet-name>
+        <servlet-class>
+            dataBean.Controller
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>
+            dataBean
+        </servlet-name>
+        <url-pattern>
+            /dataBean/Controller
+        </url-pattern>
+    </servlet-mapping>
+  
+  
 </web-app>
