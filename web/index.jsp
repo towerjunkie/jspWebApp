@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>PUSH TEST</title>
         <link rel="stylesheet"
               href="/dllan011/Styles/Styles.css"
               type="text/css">
