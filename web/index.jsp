@@ -9,14 +9,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>PUSH TEST</title>
+        <title>CGS4854 Landing Page</title>
         <link rel="stylesheet"
               href="/dllan011/Styles/Styles.css"
               type="text/css">
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <a href="reorganized/Controller">Homework 1</a>
+        <h1>CGS4854 Landing Page</h1>
+        <a href="reorganized/Controller">Homework 1 </a>
         <br>
     </body>
 </html>
