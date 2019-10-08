@@ -8,10 +8,19 @@
               type="text/css">
     </head>
     <body>
-        <p>Confirm</p>
+        <h1>Confirmation</h1>
+                
+        <p>
+        Please use this page to look over your choices and make sure that you've
+        <br> chosen your fields correctly.
+        <br> It is important that your usage, crop type and region are correct so that 
+        <br> we may provide the best fertilizer for your needs. 
+        </p>
         <br>
-        Your name is  <strong>${helper.data.hobby}.</strong> <br>
-        Your hobby is <strong>${helper.data.name}.</strong> 
+        Your usage is  <strong>${helper.data.usage}.</strong> <br>
+        Your crop is <strong>${helper.data.crop}.</strong> <br>
+        Your region is <strong>${helper.data.region}.</strong> <br>
+        
         <form action ="Controller">
 
             <p></p>
@@ -20,11 +29,15 @@
             <em> Press process to confirm </em>
             <p></p>
             <br>
-            <input type="hidden" name="name" value="${helper.data.name}">
-            <input type="hidden" name="hobby" value="${helper.data.hobby}">
+            <input type="hidden" name="usage" value="${helper.data.usage}">
+            <input type="hidden" name="crop" value="${helper.data.crop}">
+            <input type="hidden" name="region" value="${helper.data.region}">
+            <br>
             <input type="Submit" name="editButton" value="Edit">
 
             <input type="Submit" name="processButton" value="Process">
+            
+            <input type="Submit" name="wishList" value="Send to Wishlist">
         </form>
 
     </body>
