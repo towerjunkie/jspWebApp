@@ -2,39 +2,54 @@ package defaultValidate;
 
 public class requestDataDefault {
 
-    protected String name;
-    protected String hobby;
+    protected String crop;
+    protected String usage;
+    protected String region;
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCrop(String crop) {
+        this.crop = crop;
     }
 
-    public String getName() {
-        if (isValidName()) {
-            return name;
+    public String getCrop() {
+        if (isValidCrop()) {
+            return crop;
         } else {
-            return "No Name";
+            return "No crop";
         }
     }
 
-    public void setHobby(String hobby) {
-        this.hobby = hobby;
+    public void setUsage(String usage) {
+        this.usage = usage;
     }
 
-    public String getHobby() {
-        if (isValidHobby()) {
-            return hobby;
+    public String getUsage() {
+        if (isValidUsage()) {
+            return usage;
         } else {
-            return "No Hobby";
+            return "No Usage";
+        }
+    }
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    public String getRegion() {
+        if (isValidRegion()) {
+            return region;
+        } else {
+            return "No Region";
         }
     }
 
-    public boolean isValidName() {
-        return name != null && !name.trim().equals("");
+    public boolean isValidCrop() {
+        return crop != null && !crop.trim().equals("");
     }
 
-    public boolean isValidHobby() {
-        return hobby != null && !hobby.trim().equals("");
+    public boolean isValidUsage() {
+        return usage != null && !usage.trim().equals("");
+    }
+     public boolean isValidRegion() {
+        return region != null && !region.trim().equals("");
     }
 
 }

@@ -15,8 +15,9 @@ public class Controller extends HttpServlet {
         requestDataDefault data = new requestDataDefault();
         request.getSession().setAttribute("refData", data);
 
-        data.setHobby(request.getParameter("hobby"));
-        data.setName(request.getParameter("name"));
+        data.setUsage(request.getParameter("usage"));
+        data.setCrop(request.getParameter("crop"));
+        data.setRegion(request.getParameter("region"));
 
         String address;
 
