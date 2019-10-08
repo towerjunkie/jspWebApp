@@ -4,3 +4,9 @@ body {
     font: serif;
     font-size: 18px;
 }
+
+h1 {
+    color: greenyellow;
+    background-color: gray;
+    text-align: center;
+}

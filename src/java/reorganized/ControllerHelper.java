@@ -27,8 +27,9 @@ public class ControllerHelper extends HelperBase {
             throws ServletException, IOException {
         request.getSession().setAttribute("helper", this);
 
-        data.setHobby(request.getParameter("hobby"));
-        data.setName(request.getParameter("name"));
+        data.setUsage(request.getParameter("usage"));
+        data.setCrop(request.getParameter("crop"));
+        data.setRegion(request.getParameter("region"));
 
         String address;
 
@@ -36,6 +37,8 @@ public class ControllerHelper extends HelperBase {
             address = "/javaServerPages/process.jsp";
         } else if (request.getParameter("confirmButton") != null) {
             address = "/javaServerPages/confirm.jsp";
+        } else if (request.getParameter("wishList") != null) {
+            address = "/javaServerPages/WishList.jsp";
         } else {
             address = "/javaServerPages/edit.jsp";
         }
