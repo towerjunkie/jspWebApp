@@ -34,13 +34,13 @@ public class ControllerHelper extends HelperBase {
         String address;
 
         if (request.getParameter("processButton") != null) {
-            address = "/javaServerPages/process.jsp";
+            address = "/WEB-INF/classes/ch4/enhanced/Process.jsp";
         } else if (request.getParameter("confirmButton") != null) {
-            address = "/javaServerPages/confirm.jsp";
+            address = "/WEB-INF/classes/ch4/enhanced/Confirm.jsp";
         } else if (request.getParameter("wishList") != null) {
-            address = "/javaServerPages/WishList.jsp";
+            address = "/WEB-INF/classes/ch4/enhanced/WishList.jsp";
         } else {
-            address = "/javaServerPages/edit.jsp";
+            address = "/WEB-INF/classes/ch4/enhanced/Edit.jsp";
         }
 
         RequestDispatcher dispatcher

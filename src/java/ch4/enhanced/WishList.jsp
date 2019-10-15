@@ -22,12 +22,7 @@
         <strong>${helper.data.region}</strong>
 
         <form action="Controller">
-            <input type="hidden" name="usage" 
-                   value="${helper.data.usage}">
-            <input type="hidden" name="crop" 
-                   value="${helper.data.crop}">
-            <input type="hidden" name="region" 
-                   value="${helper.data.region}">
+          
             <p>
                 <input type="submit" name="editButton" 
                        value="Edit">
