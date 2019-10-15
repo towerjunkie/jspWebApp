@@ -48,9 +48,17 @@ public class ControllerHelper extends HelperBaseCh4 {
     return jspLocation("confirm.jsp");
   }
   
+  
   @ButtonMethod(buttonName="processButton")
   public String processMethod() {
     return jspLocation("process.jsp");
+    
+  }
+  
+  @ButtonMethod(buttonName="wishList")
+  public String wishlistMethod() {
+    return jspLocation("WishList.jsp");
+    
   }
   
   @Override
