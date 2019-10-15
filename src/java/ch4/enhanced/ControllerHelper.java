@@ -39,18 +39,18 @@ public class ControllerHelper extends HelperBaseCh4 {
   
   @ButtonMethod(buttonName="editButton", isDefault=true)
   public String editMethod() {
-    return jspLocation("Edit.jsp");
+    return jspLocation("edit.jsp");
   }
   
   @ButtonMethod(buttonName="confirmButton")
   public String confirmMethod() {
     fillBeanFromRequest(data);
-    return jspLocation("Confirm.jsp");
+    return jspLocation("confirm.jsp");
   }
   
   @ButtonMethod(buttonName="processButton")
   public String processMethod() {
-    return jspLocation("Process.jsp");
+    return jspLocation("process.jsp");
   }
   
   @Override
