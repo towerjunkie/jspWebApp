@@ -29,9 +29,7 @@
             <em> Press process to confirm </em>
             <p></p>
             <br>
-            <input type="hidden" name="usage" value="${helper.data.usage}">
-            <input type="hidden" name="crop" value="${helper.data.crop}">
-            <input type="hidden" name="region" value="${helper.data.region}">
+          
             <br>
             <input type="Submit" name="editButton" value="Edit">
 
