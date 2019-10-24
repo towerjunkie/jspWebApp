@@ -38,7 +38,7 @@ public class requestDataDefault {
         if (isValidRegion()) {
             return region;
         } else {
-            return "Enter 1-4";
+            return 1;
         }
     }
      public void setAcers(double acres) {
@@ -48,7 +48,7 @@ public class requestDataDefault {
         if (isValidAcres()) {
             return acres;
         } else {
-            return acres;
+            return 1.0;
         }
       }
     public boolean isValidCrop() {
