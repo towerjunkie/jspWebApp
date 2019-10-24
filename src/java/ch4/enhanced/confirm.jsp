@@ -14,12 +14,14 @@
         Please use this page to look over your choices and make sure that you've
         <br> chosen your fields correctly.
         <br> It is important that your usage, crop type and region are correct so that 
-        <br> we may provide the best fertilizer for your needs. 
+        <br> we may provide the proper quantity for your needs. 
         </p>
         <br>
         Your usage is  <strong>${helper.data.usage}.</strong> <br>
         Your crop is <strong>${helper.data.crop}.</strong> <br>
         Your region is <strong>${helper.data.region}.</strong> <br>
+        Your acreage is <srong>${helper.data.acres}</strong> <br>
+        
         
         <form action ="Controller">
 
