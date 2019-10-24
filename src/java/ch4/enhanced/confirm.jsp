@@ -20,7 +20,7 @@
         Your usage is  <strong>${helper.data.usage}.</strong> <br>
         Your crop is <strong>${helper.data.crop}.</strong> <br>
         Your region is <strong>${helper.data.region}.</strong> <br>
-        Your acreage is <srong>${helper.data.acres}</strong> <br>
+        Your acreage is <strong>${helper.data.acres}</strong> <br>
         
         
         <form action ="Controller">
