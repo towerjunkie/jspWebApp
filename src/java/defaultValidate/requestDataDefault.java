@@ -4,7 +4,7 @@ public class requestDataDefault {
 
     protected String crop;
     protected String usage;
-    protected String region;
+    protected int region;
     protected double acres;
 
     public void setCrop(String crop) {
@@ -30,11 +30,11 @@ public class requestDataDefault {
             return "No Usage";
         }
     }
-    public void setRegion(String region) {
+    public void setRegion(int region) {
         this.region = region;
     }
 
-    public String getRegion() {
+    public int getRegion() {
         if (isValidRegion()) {
             return region;
         } else {
@@ -48,7 +48,7 @@ public class requestDataDefault {
         if (isValidAcres()) {
             return acres;
         } else {
-            return 1;
+            return acres;
         }
       }
     public boolean isValidCrop() {
