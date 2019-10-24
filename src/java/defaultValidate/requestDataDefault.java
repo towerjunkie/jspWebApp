@@ -59,10 +59,10 @@ public class requestDataDefault {
         return usage != null && !usage.trim().equals("");
     }
      public boolean isValidRegion() {
-        return region != null && !region.trim().equals("");
+        return region
     }
      public boolean isValidAcres() {
-        return acres != null && !acres.trim().equals("");
+        return (acres >=1.0 && <=5000.0);
     }
 
 }
