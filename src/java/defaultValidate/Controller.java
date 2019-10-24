@@ -18,6 +18,7 @@ public class Controller extends HttpServlet {
         data.setUsage(request.getParameter("usage"));
         data.setCrop(request.getParameter("crop"));
         data.setRegion(request.getParameter("region"));
+        data.setAcres(request.getParameter("acres"));
 
         String address;
 

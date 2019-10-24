@@ -5,6 +5,7 @@ public class requestDataDefault {
     protected String crop;
     protected String usage;
     protected String region;
+    protected double acres;
 
     public void setCrop(String crop) {
         this.crop = crop;
@@ -37,10 +38,19 @@ public class requestDataDefault {
         if (isValidRegion()) {
             return region;
         } else {
-            return "No Region";
+            return "Enter 1-4";
         }
     }
-
+     public void setAcers(double acres) {
+        this.acres = acres;
+    }
+      public double getAcres() {
+        if (isValidAcres()) {
+            return acres;
+        } else {
+            return 1;
+        }
+      }
     public boolean isValidCrop() {
         return crop != null && !crop.trim().equals("");
     }
@@ -50,6 +60,9 @@ public class requestDataDefault {
     }
      public boolean isValidRegion() {
         return region != null && !region.trim().equals("");
+    }
+     public boolean isValidAcres() {
+        return acres != null && !acres.trim().equals("");
     }
 
 }

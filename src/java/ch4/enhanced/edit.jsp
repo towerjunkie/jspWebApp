@@ -31,11 +31,13 @@
                                                          value="${helper.data.crop}">
                 <br>
 
-                Southeast, Northeast, Southwest, Northwest: <input type="text" name="region" 
-                                                                   value="${helper.data.region}">
+                Southeast (1), Northeast (2), Southwest (3), Northwest (4): <input type="text" name="region" 
+                                                                                   value="${helper.data.region}">
                 <br>
-                <input type="submit" name="confirmButton" 
-                       value="Confirm">     
+                Size in acres of your farm: <input type="text" name="acres" 
+                                                   value="${helper.data.acres}"
+                                                   
+                 <input type="submit" name="confirmButton" value="Confirm">     
         </form>
     </body>
 </html>
