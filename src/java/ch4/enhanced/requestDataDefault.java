@@ -2,6 +2,7 @@ package ch4.enhanced;
 
 import org.apache.log4j.Logger;
 
+
 public class requestDataDefault {
 
     protected String crop;
@@ -9,10 +10,17 @@ public class requestDataDefault {
     protected int region;
     protected float acres;
     protected Logger logger;
+     
+    {
+        logger = Logger.getLogger(logName);
+        logger.setLevel(logLevel);
+    }
     
     public void setCrop(String crop) {
         this.crop = crop;
     }
+    
+   
 
     public String getCrop() {
         if (isValidCrop()) {
