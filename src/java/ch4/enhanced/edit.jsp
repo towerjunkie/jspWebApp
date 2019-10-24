@@ -37,6 +37,8 @@
                 Size in acres of your farm: <input type="text" name="acres" 
                                                    value="${helper.data.acres}"
                                                    
+                <br>
+                <br>                              
                  <input type="submit" name="confirmButton" value="Confirm">     
         </form>
     </body>
