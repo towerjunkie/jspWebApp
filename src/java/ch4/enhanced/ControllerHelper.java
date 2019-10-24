@@ -7,8 +7,6 @@ import javax.servlet.ServletException;
 import shared.ButtonMethod;
 import shared.HelperBaseCh4;
 
-//Import the bean for the application
-import defaultValidate.requestDataDefault;
 import javax.servlet.http.HttpServlet;
 
 public class ControllerHelper extends HelperBaseCh4 {

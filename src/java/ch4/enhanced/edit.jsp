@@ -35,7 +35,7 @@
                                                                                    value="${helper.data.region}">
                 <br>
                 Size in acres of your farm: <input type="text" name="acres" 
-                                                   value="${helper.data.acres}"
+                                                   value="${helper.data.acres}">
                                                    
                 <br>
                 <br>                              

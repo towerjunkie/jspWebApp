@@ -1,12 +1,15 @@
 package ch4.enhanced;
 
+import org.apache.log4j.Logger;
+
 public class requestDataDefault {
 
     protected String crop;
     protected String usage;
     protected int region;
-    protected double acres;
-
+    protected float acres;
+    protected Logger logger;
+    
     public void setCrop(String crop) {
         this.crop = crop;
     }
@@ -41,14 +44,14 @@ public class requestDataDefault {
             return 1;
         }
     }
-     public void setAcers(double acres) {
+     public void setAcres(float acres) {
         this.acres = acres;
     }
-      public double getAcres() {
+      public float getAcres() {
         if (isValidAcres()) {
             return acres;
         } else {
-            return 1.0;
+            return 1.0f;
         }
       }
     public boolean isValidCrop() {
