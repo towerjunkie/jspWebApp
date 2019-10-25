@@ -16,10 +16,11 @@
         
     </head>
     <body>
-        <h1>CGS4854 Landing Page</h1>
+        <h1>CGS4854 Homework Page</h1>
         <br>
         <a href="ch4/enhanced/Controller">Homework 1</a>
-        <a href="HW2/Controller">Homework 2</a>
+        <br>
+        <a href="hw2/Controller">Homework 2</a>
         <br>
     </body>
 </html>
