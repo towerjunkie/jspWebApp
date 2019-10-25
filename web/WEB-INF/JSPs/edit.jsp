@@ -24,18 +24,18 @@
             <p>
 
                 Commercial or Residential: <input type="text" name="usage" 
-                                                  value="${helper.data.usage}">
+                                                  value="${assist.data.usage}">
                 <br>
 
                 Food crop, Feed crop, Fiber crop: <input type="text" name="crop" 
-                                                         value="${helper.data.crop}">
+                                                         value="${assist.data.crop}">
                 <br>
 
                 Southeast (1), Northeast (2), Southwest (3), Northwest (4): <input type="text" name="region" 
-                                                                                   value="${helper.data.region}">
+                                                                                   value="${assist.data.region}">
                 <br>
                 Size in acres of your farm: <input type="text" name="acres" 
-                                                   value="${helper.data.acres}">
+                                                   value="${assist.data.acres}">
                                                    
                 <br>
                 <br>                              

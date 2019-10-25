@@ -17,10 +17,10 @@
         <br> we may provide the proper quantity for your needs. 
         </p>
         <br>
-        Your usage is  <strong>${helper.data.usage}.</strong> <br>
-        Your crop is <strong>${helper.data.crop}.</strong> <br>
-        Your region is <strong>${helper.data.region}.</strong> <br>
-        Your acreage is <strong>${helper.data.acres}</strong> <br>
+        Your usage is  <strong>${assist.data.usage}.</strong> <br>
+        Your crop is <strong>${assist.data.crop}.</strong> <br>
+        Your region is <strong>${assist.data.region}.</strong> <br>
+        Your acreage is <strong>${assist.data.acres}</strong> <br>
         
         
         

@@ -15,11 +15,11 @@
         <br> to keep you running.
         </p>
 
-        Your usage is <strong>${helper.data.usage}</strong>
+        Your usage is <strong>${assist.data.usage}</strong>
         <br>
-        your crop is <strong>${helper.data.crop}</strong>
+        your crop is <strong>${assist.data.crop}</strong>
         <br>
-        Your region is <strong>${helper.data.region}</strong>.
+        Your region is <strong>${assist.data.region}</strong>.
 
         <form action="Controller">
            

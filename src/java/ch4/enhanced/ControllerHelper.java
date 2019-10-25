@@ -63,7 +63,7 @@ public class ControllerHelper extends HelperBaseCh4 {
   public void doGet() 
     throws ServletException, IOException
   {
-    addHelperToSession("helper", SessionData.READ);
+    addHelperToSession("assist", SessionData.READ);
     
     String address = executeButtonMethod();
     
