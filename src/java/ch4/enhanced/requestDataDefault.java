@@ -8,13 +8,10 @@ public class requestDataDefault {
     protected String crop;
     protected String usage;
     protected int region;
-    protected float acres;
+    protected double acres;
     protected Logger logger;
      
-    {
-        logger = Logger.getLogger(logName);
-        logger.setLevel(logLevel);
-    }
+    
     
     public void setCrop(String crop) {
         this.crop = crop;
@@ -52,14 +49,14 @@ public class requestDataDefault {
             return 1;
         }
     }
-     public void setAcres(float acres) {
+     public void setAcres(double acres) {
         this.acres = acres;
     }
-      public float getAcres() {
+      public double getAcres() {
         if (isValidAcres()) {
             return acres;
         } else {
-            return 1.0f;
+            return 1.0;
         }
       }
     public boolean isValidCrop() {
