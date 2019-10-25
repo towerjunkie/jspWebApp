@@ -23,7 +23,7 @@ public class requestDataDefault {
         if (isValidCrop()) {
             return crop;
         } else {
-            return "No crop";
+            return "Must Choose Crop";
         }
     }
 
@@ -35,7 +35,7 @@ public class requestDataDefault {
         if (isValidUsage()) {
             return usage;
         } else {
-            return "No Usage";
+            return "Must Choose Usage";
         }
     }
     public void setRegion(int region) {

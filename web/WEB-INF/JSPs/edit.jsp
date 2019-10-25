@@ -32,10 +32,10 @@
                 <br>
 
                 Southeast (1), Northeast (2), Southwest (3), Northwest (4): <input type="text" name="region" 
-                                                                                   value="${assist.data.region}">
+                                                                                   value="${assist.data.region}">  1-4
                 <br>
                 Size in acres of your farm: <input type="text" name="acres" 
-                                                   value="${assist.data.acres}">
+                                                   value="${assist.data.acres}">  1.0-10000.0
                                                    
                 <br>
                 <br>                              
