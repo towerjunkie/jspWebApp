@@ -1,4 +1,4 @@
-package hw1;
+package homework2;
 
 import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;

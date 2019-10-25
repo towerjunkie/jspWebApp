@@ -18,9 +18,9 @@
     <body>
         <h1>CGS4854 Homework Page</h1>
         <br>
-        <a href="hw1/Controller">Homework 1</a>
+        <a href="homework2/Controller">Homework 2</a>
         <br>
-        <a href="hw2/Controller">Homework 2</a>
+        <a href="hw2/Controller">Homework 1</a>
         <br>
     </body>
 </html>
