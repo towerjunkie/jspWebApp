@@ -32,30 +32,30 @@ public class ControllerHelper extends HelperBaseCh4 {
   }
   
   protected String jspLocation(String page) {
-    return "/WEB-INF/classes/ch4/enhanced/" + page;
+    return "/WEB-INF/" + page;
   }
   
   @ButtonMethod(buttonName="editButton", isDefault=true)
   public String editMethod() {
-    return jspLocation("edit.jsp");
+    return jspLocation("/JSPs/edit.jsp");
   }
   
   @ButtonMethod(buttonName="confirmButton")
   public String confirmMethod() {
     fillBeanFromRequest(data);
-    return jspLocation("confirm.jsp");
+    return jspLocation("/JSPs/confirm.jsp");
   }
   
   
   @ButtonMethod(buttonName="processButton")
   public String processMethod() {
-    return jspLocation("process.jsp");
+    return jspLocation("/JSPs/process.jsp");
     
   }
   
   @ButtonMethod(buttonName="wishList")
   public String wishlistMethod() {
-    return jspLocation("WishList.jsp");
+    return jspLocation("/JSPs/WishList.jsp");
     
   }
   

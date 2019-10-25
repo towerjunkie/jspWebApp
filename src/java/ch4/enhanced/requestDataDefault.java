@@ -73,5 +73,4 @@ public class requestDataDefault {
      public boolean isValidAcres() {
         return (acres >=1.0 && acres <=10000.0);
     }
-
 }
