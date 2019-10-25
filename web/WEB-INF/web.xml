@@ -28,7 +28,7 @@
         <url-pattern>/hw1/Controller</url-pattern>
     </servlet-mapping>
 
-      <servlet>
+    <servlet>
         <servlet-name>Log4jInitServlet</servlet-name>
         <servlet-class>shared.InitLog4j</servlet-class>
         <init-param>
@@ -38,4 +38,21 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     
+    <servlet>
+        <servlet-name>
+            hw2
+        </servlet-name>
+        <servlet-class>
+            hw2.Controller
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            hw2
+        </servlet-name>
+        <url-pattern>
+            /hw2/Controller
+        </url-pattern>
+    </servlet-mapping>    
 </web-app>
