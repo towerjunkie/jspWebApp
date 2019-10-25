@@ -1,4 +1,4 @@
-package ch4.enhanced;
+package hw1;
 
 import org.apache.log4j.Logger;
 
