@@ -15,12 +15,9 @@
         <br>Currently, your wish list has saved the following properties:
         </p>
 
-        <strong>${assist.client.usage}</strong>
-        <br>
-        <strong>${assist.client.crop}</strong>
-        <br>
-        <strong>${assist.client.region}</strong>
-
+        The total amount of fertilizer you need is <strong>${assist.client.calculation}</strong> gal/acres.
+        
+        
         <form action="Controller">
           
             <p>

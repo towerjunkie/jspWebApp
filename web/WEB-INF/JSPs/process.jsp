@@ -23,7 +23,7 @@
         <br>
         Size in acres of your farm is <strong>${assist.client.acres}</strong>
         <br>
-        The total amount of fertilizer you need is <strong>${assist.client.calculation}</strong> gal/100 acres.
+        The total amount of fertilizer you need is <strong>${assist.client.calculation}</strong> gal/acres.
         <form action="Controller">
            
             <p>
