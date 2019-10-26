@@ -11,51 +11,51 @@ import javax.servlet.http.HttpServlet;
 
 public class ControllerHelper extends HelperBaseCh4 {
   
-  private requestDataDefault data;
+  private requestDataDefault client;
   
   public ControllerHelper(
             HttpServlet servlet,
             HttpServletRequest request,
             HttpServletResponse response) {
         super(servlet, request, response);
-        data = new requestDataDefault();
+        client = new requestDataDefault();
   }
   
-  public Object getData() {
-    return data;
+  public Object getClient() {
+    return client;
   }
   
   public void copyFromSession(Object sessionHelper) {
     if (sessionHelper.getClass() == this.getClass()) {
-      data = ((ControllerHelper)sessionHelper).data;
+      client = ((ControllerHelper)sessionHelper).client;
     }
   }
   
   protected String jspLocation(String page) {
-    return "/WEB-INF/" + page;
+    return "/WEB-INF/JSPs/" + page;
   }
   
   @ButtonMethod(buttonName="editButton", isDefault=true)
   public String editMethod() {
-    return jspLocation("/JSPs/edit.jsp");
+    return jspLocation("edit.jsp");
   }
   
   @ButtonMethod(buttonName="confirmButton")
   public String confirmMethod() {
-    fillBeanFromRequest(data);
-    return jspLocation("/JSPs/confirm.jsp");
+    fillBeanFromRequest(client);
+    return jspLocation("confirm.jsp");
   }
   
   
   @ButtonMethod(buttonName="processButton")
   public String processMethod() {
-    return jspLocation("/JSPs/process.jsp");
+    return jspLocation("process.jsp");
     
   }
   
   @ButtonMethod(buttonName="wishList")
   public String wishlistMethod() {
-    return jspLocation("/JSPs/WishList.jsp");
+    return jspLocation("WishList.jsp");
     
   }
   

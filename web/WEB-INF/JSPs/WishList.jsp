@@ -15,11 +15,11 @@
         <br>Currently, your wish list has saved the following properties:
         </p>
 
-        <strong>${assist.data.usage}</strong>
+        <strong>${assist.client.usage}</strong>
         <br>
-        <strong>${assist.data.crop}</strong>
+        <strong>${assist.client.crop}</strong>
         <br>
-        <strong>${assist.data.region}</strong>
+        <strong>${assist.client.region}</strong>
 
         <form action="Controller">
           
