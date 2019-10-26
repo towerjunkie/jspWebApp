@@ -13,7 +13,7 @@ public class requestDataDefault {
     protected Logger logger;
     protected double calculation;
     
-    
+           
     public void setCrop(String crop) {
         this.crop = crop;
 //        logger.info("Crop has been set");
