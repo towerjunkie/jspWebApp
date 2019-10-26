@@ -10,7 +10,7 @@ public class requestDataDefault {
     protected int region;
     protected double acres;
     protected Logger logger;
-     
+    protected double calculation;
     
     
     public void setCrop(String crop) {
@@ -58,6 +58,11 @@ public class requestDataDefault {
         } else {
             return 1.0;
         }
+      }
+      
+      public double getCalculation() {
+          calculation = acres/region;
+          return calculation;
       }
     public boolean isValidCrop() {
         return crop != null && !crop.trim().equals("");
