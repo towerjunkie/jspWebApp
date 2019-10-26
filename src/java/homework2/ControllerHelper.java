@@ -30,6 +30,7 @@ public class ControllerHelper extends HelperBaseCh4 {
   public void copyFromSession(Object sessionHelper) {
     if (sessionHelper.getClass() == this.getClass()) {
       client = ((ControllerHelper)sessionHelper).client;
+      logger.info("Copy from session was called");
     }
   }
   
@@ -39,6 +40,7 @@ public class ControllerHelper extends HelperBaseCh4 {
   
   @ButtonMethod(buttonName="editButton", isDefault=true)
   public String editMethod() {
+    logger.warn("Edit button was called");
     return jspLocation("edit.jsp");
   }
   
@@ -51,6 +53,7 @@ public class ControllerHelper extends HelperBaseCh4 {
   
   @ButtonMethod(buttonName="processButton")
   public String processMethod() {
+      logger.debug("Process button was called");
     return jspLocation("process.jsp");
     
   }
