@@ -8,6 +8,8 @@ import shared.ButtonMethod;
 import shared.HelperBaseCh4;
 
 import javax.servlet.http.HttpServlet;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 
 public class ControllerHelper extends HelperBaseCh4 {
   

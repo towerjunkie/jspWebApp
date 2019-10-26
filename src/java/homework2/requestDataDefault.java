@@ -16,7 +16,7 @@ public class requestDataDefault {
     
     public void setCrop(String crop) {
         this.crop = crop;
-        logger.info("Crop has been set");
+//        logger.info("Crop has been set");
     }
     
    
@@ -31,7 +31,7 @@ public class requestDataDefault {
 
     public void setUsage(String usage) {
         this.usage = usage;
-        logger.info("Usage has been set");
+//        logger.info("Usage has been set");
     }
 
     public String getUsage() {
@@ -43,7 +43,7 @@ public class requestDataDefault {
     }
     public void setRegion(int region) {
         this.region = region;
-        logger.info("Region has been set");
+//        logger.info("Region has been set");
     }
 
     public int getRegion() {
@@ -55,7 +55,7 @@ public class requestDataDefault {
     }
      public void setAcres(double acres) {
         this.acres = acres;
-        logger.info("Acerage has been set");
+//        logger.info("Acerage has been set");
     }
       public double getAcres() {
         if (isValidAcres()) {
