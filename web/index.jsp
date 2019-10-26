@@ -10,8 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>CGS4854 Landing Page</title>
-        <link rel="stylesheet"
-              href="/dllan011/Styles/Styles.css"
+         <link rel="stylesheet"
+              href="/styles/stylesheet.css"
               type="text/css">
         
     </head>
