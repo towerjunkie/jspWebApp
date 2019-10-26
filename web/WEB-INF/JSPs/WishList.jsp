@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Process </title>
         <link rel="stylesheet"
-              href="/dllan011/Styles/Styles.css"
+              href="/styles/stylesheet.css"
               type="text/css">
     </head>
     <body>

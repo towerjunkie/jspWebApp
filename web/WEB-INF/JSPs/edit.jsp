@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Edit Page</title>
         <link rel="stylesheet"
-              href="/dllan011/Styles/Styles.css"
+              href="/styles/stylesheet.css"
               type="text/css">
     </head>
     <body>
