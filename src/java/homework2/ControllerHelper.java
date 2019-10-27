@@ -53,7 +53,7 @@ public class ControllerHelper extends HelperBaseCh4 {
   
   @ButtonMethod(buttonName="processButton")
   public String processMethod() {
-      logger.debug("Process button was called");
+      logger.debug("Process button was called" + client.getRegion());
     return jspLocation("process.jsp");
     
   }
