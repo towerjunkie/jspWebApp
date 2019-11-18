@@ -23,18 +23,18 @@
 
             <p>
                 
-                Commercial or Residential ${assist.errors.usage}: <input type="text" name="usage" 
-                                                  value="${assist.client.usage}">
+                Commercial or Residential: <input type="text" name="use" 
+                                                  value="${assist.client.use}">
                 <br>
 
-                Food crop, Feed crop, Fiber crop ${assist.errors.crop}: <input type="text" name="crop" 
+                Food crop, Feed crop, Fiber crop: <input type="text" name="crop" 
                                                          value="${assist.client.crop}">
                 <br>
 
-                Southeast (1), Northeast (2), Southwest (3), Northwest (4)${assist.errors.region}: <input type="text" name="region" 
+                Southeast (1), Northeast (2), Southwest (3), Northwest (4): <input type="text" name="region" 
                                                                                    value="${assist.client.region}">  1-4
                 <br>
-                Size in acres of your farm ${assist.errors.acres}: <input type="text" name="acres" 
+                Size in acres of your farm: <input type="text" name="acres" 
                                                    value="${assist.client.acres}">  1.0-10000.0
                                                    
                 <br>

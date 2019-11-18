@@ -17,7 +17,7 @@
         <br> we may provide the proper quantity for your needs. 
         </p>
         <br>
-        Your usage is  <strong>${assist.client.usage}.</strong> <br>
+        Your usage is  <strong>${assist.client.use}.</strong> <br>
         Your crop is <strong>${assist.client.crop}.</strong> <br>
         Your region is <strong>${assist.client.region}.</strong> <br>
         Your acreage is <strong>${assist.client.acres}</strong> <br>
