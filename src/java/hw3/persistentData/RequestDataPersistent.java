@@ -13,7 +13,7 @@ public class RequestDataPersistent
         extends shared.PersistentBase
         implements Serializable
 {
-    protected String use;
+    protected String land;
     protected String crop;
     protected String region;
     protected String acres;
@@ -23,12 +23,12 @@ public class RequestDataPersistent
 
     @Pattern(regexp=".*\\S.*", message="cannot be empty")
     @NotNull
-    public String getUse() { 
-        return use; 
+    public String getLand() { 
+        return land; 
     } 
      
-    public void setUse(String use) {
-        this.use = use;
+    public void setLand(String land) {
+        this.land = land;
     }   
     
     @Pattern(regexp=".*\\S.*", message="cannot be empty")

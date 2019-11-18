@@ -23,8 +23,8 @@
 
             <p>
                 
-                Commercial or Residential: <input type="text" name="use" 
-                                                  value="${assist.client.use}">
+                Commercial or Residential: <input type="text" name="land" 
+                                                  value="${assist.client.land}">
                 <br>
 
                 Food crop, Feed crop, Fiber crop: <input type="text" name="crop" 

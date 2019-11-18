@@ -8,28 +8,32 @@
               type="text/css">
     </head>
     <body>
-        <h1>Your information is being processed!</h1>
-        <p>
-        Please look over this information and make sure it matches the
-        <br> specifications exactly so that we may provide a fertilizer
-        <br> to keep you running.
-        </p>
-
-        Your usage is <strong>${assist.client.usage}</strong>
-        <br>
-        your crop is <strong>${assist.client.crop}</strong>
-        <br>
-        Your region is <strong>${assist.client.region}</strong>.
-        <br>
-        Size in acres of your farm is <strong>${assist.client.acres}</strong>
-        <br>
-        The total amount of fertilizer you need is <strong>${assist.client.calculation}</strong> gal/acres.
-        <form action="Controller">
-           
-            <p>
-                <input type="submit" name="editButton" 
-                       value="Edit">
-        </form>
-
-    </body>
+    <p>
+      Thank you for your information. Your hobby of 
+      <strong>${helper.data.land}</strong> that is practiced
+      <strong>${helper.data.region}</strong> days per week
+      and aversion of
+      <strong>${helper.data.crop}</strong> will be added to our
+      records.
+    <form method="POST" action="Controller">
+      <p>
+      <input type="submit" name="editButton" 
+                           value="Edit">
+    </form>
+    <form method="GET" action="Controller">
+      <p>
+      <input type="submit" name="editButton" 
+                           value="New">
+    </form>
+    <p>
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" 
+             prefix="core" %>
+      <core:forEach var="row" items="${database}">
+        ${row.id}, 
+        ${row.land}, 
+        ${row.region},
+        ${row.crop}<br>
+      </core:forEach>
+  </body>
 </html>
+

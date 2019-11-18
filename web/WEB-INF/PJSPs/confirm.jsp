@@ -17,12 +17,12 @@
         <br> we may provide the proper quantity for your needs. 
         </p>
         <br>
-        Your usage is  <strong>${assist.client.use}.</strong> <br>
+        Your usage is  <strong>${assist.client.land}.</strong> <br>
         Your crop is <strong>${assist.client.crop}.</strong> <br>
         Your region is <strong>${assist.client.region}.</strong> <br>
         Your acreage is <strong>${assist.client.acres}</strong> <br>
         
-        
+       
         
         <form method="POST" action="Controller">
 
