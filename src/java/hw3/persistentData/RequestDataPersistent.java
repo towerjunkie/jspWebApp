@@ -13,32 +13,55 @@ public class RequestDataPersistent
         extends shared.PersistentBase
         implements Serializable
 {
-    protected String hobby;
-    protected String aversion;
+    protected String usage;
+    protected String crop;
+    protected String region;
+    protected String acres;
     
     public RequestDataPersistent() {
     }
 
     @Pattern(regexp=".*\\S.*", message="cannot be empty")
     @NotNull
-    public String getHobby() { 
-        return hobby; 
+    public String getUsage() { 
+        return usage; 
     } 
      
-    public void setHobby(String hobby) {
-        this.hobby = hobby;
+    public void setUsage(String usage) {
+        this.usage = usage;
     }   
     
     @Pattern(regexp=".*\\S.*", message="cannot be empty")
     @NotNull
-    public String getAversion() {
-        return aversion;
+    public String getCrop() {
+        return crop;
     } 
     
-    public void setAversion(String aversion) {
-        this.aversion = aversion;
+    public void setCrop(String crop) {
+        this.crop = crop;
+    }
+    
+    @Pattern(regexp=".*\\S.*", message="cannot be empty")
+    @NotNull
+    public String getRegion() {
+        return region;
+    } 
+    
+    public void setRegion(String region) {
+        this.region = region;
+    }
+    
+     @Pattern(regexp=".*\\S.*", message="cannot be empty")
+    @NotNull
+    public String getAcres() {
+        return acres;
+    } 
+    
+    public void setAcres(String acres) {
+        this.acres = acres;
     }
 
+/*
     protected int daysPerWeek;
 
     @Min(value=1, message="must be greater than 1, if this is a hobby.")
@@ -50,4 +73,5 @@ public class RequestDataPersistent
     public void setDaysPerWeek(int daysPerWeek) {
         this.daysPerWeek = daysPerWeek;
     }
+*/
 }

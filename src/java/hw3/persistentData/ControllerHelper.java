@@ -58,7 +58,7 @@ public class ControllerHelper extends HelperBaseCh5 {
                 RequestDataPersistent.class);
     }  
 
-    public Object getData() {
+    public Object getClient() {
         return client;
     }
 
@@ -69,7 +69,7 @@ public class ControllerHelper extends HelperBaseCh5 {
     }
 
     protected String jspLocation(String page) {
-        return "/WEB-INF/JSPs/" + page;
+        return "/WEB-INF/PJSPs/" + page;
     }
 
     @ButtonMethod(buttonName = "editButton", isDefault = true)
@@ -82,6 +82,7 @@ public class ControllerHelper extends HelperBaseCh5 {
         fillBeanFromRequest(client);
         //The next JSP address depends on the validity of the data.
         String address;
+        //Delete this and it moves forward
         if (isValid(client)) {
             address = jspLocation("confirm.jsp");
         } else {
