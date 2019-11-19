@@ -70,18 +70,4 @@ public class RequestDataPersistent
           calculation = acres/region;
           return calculation;
       }
-
-/*
-    protected int daysPerWeek;
-
-    @Min(value=1, message="must be greater than 1, if this is a hobby.")
-    @Max(value=7, message="cannot be greater than 7. A week only has 7 days.")
-    public int getDaysPerWeek() {
-        return daysPerWeek;
-    }
-
-    public void setDaysPerWeek(int daysPerWeek) {
-        this.daysPerWeek = daysPerWeek;
-    }
-*/
 }

@@ -34,8 +34,14 @@
                 Southeast (1), Northeast (2), Southwest (3), Northwest (4): <input type="text" name="region" 
                                                                                    value="${assist.client.region}">  1-4
                 <br>
+                
+                ${assist.errors.region}
+                                                   
+                <br>
                 Size in acres of your farm: <input type="text" name="acres" 
                                                    value="${assist.client.acres}">  1.0-10000.0
+                <br>
+                ${assist.errors.acres}
                                                    
                 <br>
                 
