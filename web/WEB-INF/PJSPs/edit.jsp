@@ -30,7 +30,7 @@
 
                
                 <br>
-            <table style="width:35%">
+            <table style="width:30%">
                 <tr>
                     <th>Table</th>
                     <th>Output</th>
