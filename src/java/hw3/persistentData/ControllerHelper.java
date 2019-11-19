@@ -106,10 +106,20 @@ public class ControllerHelper extends HelperBaseCh5 {
         return jspLocation("process.jsp");
     }
     
-@ButtonMethod(buttonName = "viewButton")
+
+    @ButtonMethod(buttonName = "viewButton")
     public String viewMethod() {
+        if (!isValid(client)) {
+            return jspLocation("view.jsp");
+        }
+        HibernateHelper.updateDB(client);
+        java.util.List list =
+                HibernateHelper.getListData(client.getClass());
+        request.setAttribute("database", list);
         return jspLocation("view.jsp");
     }
+    
+    
     @Override
     public void doGet()
             throws ServletException, java.io.IOException 

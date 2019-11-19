@@ -22,7 +22,7 @@
             <p>
 
             <p>
-                
+
                 Commercial or Residential: <input type="text" name="land" 
                                                   value="${assist.client.land}">
                 <br>
@@ -32,21 +32,20 @@
                 <br>
 
                 Southeast (1), Northeast (2), Southwest (3), Northwest (4): <input type="text" name="region" 
-                                                                                   value="${assist.client.region}">  1-4
+                                                                                   value="${assist.client.region}"> ${assist.errors.region}
                 <br>
-                
-                ${assist.errors.region}
-                                                   
-                <br>
+
+
+
                 Size in acres of your farm: <input type="text" name="acres" 
-                                                   value="${assist.client.acres}">  1.0-10000.0
+                                                   value="${assist.client.acres}"> ${assist.errors.acres}
                 <br>
-                ${assist.errors.acres}
-                                                   
+
+
                 <br>
-                
+
                 <br>                              
-                 <input type="submit" name="confirmButton" value="Confirm">     
+                <input type="submit" name="confirmButton" value="Confirm">     
         </form>
     </body>
 </html>
