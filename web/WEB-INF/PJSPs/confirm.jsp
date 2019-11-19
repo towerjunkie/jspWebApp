@@ -38,7 +38,7 @@
 
             <input type="Submit" name="processButton" value="Process">
             
-            <input type="Submit" name="viewButton" value="View">
+            
             
            
             

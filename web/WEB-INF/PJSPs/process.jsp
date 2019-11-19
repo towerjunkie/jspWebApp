@@ -29,14 +29,17 @@
       </core:forEach>
         
          <form method="POST" action="Controller">
+             
       <p>
       <input type="submit" name="editButton" 
                            value="Edit">
+      <input type="Submit" name="viewButton" value="View">
     </form>
     <form method="GET" action="Controller">
       <p>
       <input type="submit" name="editButton" 
                            value="New">
+      
       
       
     </form>
