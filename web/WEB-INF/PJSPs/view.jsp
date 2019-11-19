@@ -1,23 +1,20 @@
+<%-- 
+    Document   : view
+    Created on : Nov 18, 2019, 7:29:50 PM
+    Author     : dllan
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Process </title>
-        <link rel="stylesheet"
-              href="/styles/stylesheet.css"
-              type="text/css">
+        <title>View Page</title>
     </head>
     <body>
-    <p>
-      
-        Your land use is:<strong>${assist.client.land}</strong> <br>
-        Your region is:<strong>${assist.client.region}</strong> <br>
-        Your crop type is:<strong>${assist.client.crop}</strong> <br>
-        Your acreage is:<strong>${assist.client.acres}</strong> <br>
-        Total amount of fertilizer:<strong>${assist.client.calculation}</strong> gal/acres.
-     
-   
-    <p>
+        <h1>View Page</h1>
+        Table View
+       <p>
         <%@ taglib uri="http://java.sun.com/jsp/jstl/core" 
              prefix="core" %>
       <core:forEach var="row" items="${database}">
@@ -40,6 +37,6 @@
       
       
     </form>
-  </body>
+      
+    </body>
 </html>
-

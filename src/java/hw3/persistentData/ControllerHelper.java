@@ -76,6 +76,8 @@ public class ControllerHelper extends HelperBaseCh5 {
     public String editMethod() {
         return jspLocation("edit.jsp");
     }
+    
+    
 
     @ButtonMethod(buttonName = "confirmButton")
     public String confirmMethod() {
@@ -88,6 +90,7 @@ public class ControllerHelper extends HelperBaseCh5 {
         } else {
             address = jspLocation("edit.jsp");
         }
+        
         return address;
     }
 
@@ -102,7 +105,11 @@ public class ControllerHelper extends HelperBaseCh5 {
         request.setAttribute("database", list);
         return jspLocation("process.jsp");
     }
-
+    
+@ButtonMethod(buttonName = "viewButton")
+    public String viewMethod() {
+        return jspLocation("view.jsp");
+    }
     @Override
     public void doGet()
             throws ServletException, java.io.IOException 

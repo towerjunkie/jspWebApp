@@ -38,7 +38,11 @@
 
             <input type="Submit" name="processButton" value="Process">
             
-            <input type="Submit" name="wishList" value="Send to Wishlist">
+            <input type="Submit" name="viewButton" value="View">
+            
+           
+            
+            
         </form>
 
     </body>
