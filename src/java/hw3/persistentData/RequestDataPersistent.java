@@ -5,6 +5,7 @@ import java.io.Serializable;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 
@@ -15,8 +16,9 @@ public class RequestDataPersistent
 {
     protected String land;
     protected String crop;
-    protected String region;
-    protected String acres;
+    protected int region;
+    protected double acres;
+    protected double calculation;
     
     public RequestDataPersistent() {
     }
@@ -41,25 +43,33 @@ public class RequestDataPersistent
         this.crop = crop;
     }
     
-    @Pattern(regexp=".*\\S.*", message="cannot be empty")
+    @Min(value=1,message="Value must be greater than 1")
+    @Max(value=4,message="Value must be less than 4")
     @NotNull
-    public String getRegion() {
+    public int getRegion() {
         return region;
     } 
     
-    public void setRegion(String region) {
+    public void setRegion(int region) {
         this.region = region;
     }
     
-     @Pattern(regexp=".*\\S.*", message="cannot be empty")
+    @Min(value=1,message="Value must be greater than 1")
+    @Max(value=10000, message="Value must be less than 10,000")
     @NotNull
-    public String getAcres() {
+    public double getAcres() {
         return acres;
     } 
     
-    public void setAcres(String acres) {
+    public void setAcres(double acres) {
         this.acres = acres;
     }
+    
+    @Transient
+    public double getCalculation() {
+          calculation = acres/region;
+          return calculation;
+      }
 
 /*
     protected int daysPerWeek;
