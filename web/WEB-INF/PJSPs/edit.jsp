@@ -6,6 +6,11 @@
         <link rel="stylesheet"
               href="/styles/stylesheet.css"
               type="text/css">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
     </head>
     <body>
         <h1> Give us some information about your operation </h1>
@@ -23,29 +28,40 @@
 
             <p>
 
-                Commercial or Residential: <input type="text" name="land" 
-                                                  value="${assist.client.land}">
+               
                 <br>
+            <table style="width:35%">
+                <tr>
+                    <th>Table</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>Commercial or Residential:</td>
+                    <td><input type="text" name="land" 
+                                                  value="${assist.client.land}"></td>
+                </tr>
+                <tr>
+                    <td>Food crop, Feed crop, Fiber crop:</td>
+                    <td><input type="text" name="crop" 
+                                                         value="${assist.client.crop}"></td>
+                </tr>
+                <tr>
+                    <td>Southeast (1), Northeast (2), Southwest (3), Northwest (4):</td>
+                    <td><input type="text" name="region" 
+                               value="${assist.client.region}"> ${assist.errors.region}</td>
+                </tr>
+                <tr>
+                    <td>Acres of your farm:</td>
+                    <td><input type="text" name="acres" 
+                               value="${assist.client.acres}"> ${assist.errors.acres}</td>
+                </tr>
 
-                Food crop, Feed crop, Fiber crop: <input type="text" name="crop" 
-                                                         value="${assist.client.crop}">
-                <br>
+            </table>
 
-                Southeast (1), Northeast (2), Southwest (3), Northwest (4): <input type="text" name="region" 
-                                                                                   value="${assist.client.region}"> ${assist.errors.region}
-                <br>
+            <br>
 
-
-
-                Size in acres of your farm: <input type="text" name="acres" 
-                                                   value="${assist.client.acres}"> ${assist.errors.acres}
-                <br>
-
-
-                <br>
-
-                <br>                              
-                <input type="submit" name="confirmButton" value="Confirm">     
+            <br>                              
+            <input type="submit" name="confirmButton" value="Confirm">     
         </form>
     </body>
 </html>
