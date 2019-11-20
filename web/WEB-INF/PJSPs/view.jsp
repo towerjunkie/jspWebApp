@@ -35,6 +35,15 @@
                 </tr>
             </core:forEach>
         </table>
-    </p>
-</body>
-</html>
+        <form method="POST" action="Controller">
+
+            <p>
+                <input type="submit" name="editButton" 
+                       value="Edit">
+            <form method="GET" action="Controller">
+                <p>
+                    <input type="submit" name="editButton" 
+                           value="New">
+                </p>
+                </body>
+                </html>
