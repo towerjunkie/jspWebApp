@@ -99,7 +99,7 @@
         <servlet-class>hw3.persistentData.Controller</servlet-class>
         <init-param>
             <param-name>create</param-name>
-            <param-value>true</param-value>
+            <param-value>false</param-value>
         </init-param>
     </servlet>
     <servlet-mapping>

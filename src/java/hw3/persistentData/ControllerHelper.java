@@ -11,8 +11,8 @@ import shared.HibernateHelper;
 
 public class ControllerHelper extends HelperBaseCh5 {
 
-    protected RequestDataPersistent client =
-            new RequestDataPersistent();
+    protected DataPersistent client =
+            new DataPersistent();
 
     public ControllerHelper(
             HttpServlet servlet,
@@ -50,12 +50,12 @@ public class ControllerHelper extends HelperBaseCh5 {
         if (create) {
             HibernateHelper.createTable(
                     props,
-                    RequestDataPersistent.class);
+                    DataPersistent.class);
         }
 
         HibernateHelper.initSessionFactory(
                 props,
-                RequestDataPersistent.class);
+                DataPersistent.class);
     }  
 
     public Object getClient() {

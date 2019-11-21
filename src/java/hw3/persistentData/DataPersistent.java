@@ -10,7 +10,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 
 @Entity
-public class RequestDataPersistent 
+public class DataPersistent 
         extends shared.PersistentBase
         implements Serializable
 {
@@ -20,7 +20,7 @@ public class RequestDataPersistent
     protected double acres;
     protected double calculation;
     
-    public RequestDataPersistent() {
+    public DataPersistent() {
     }
 
     @Pattern(regexp=".*\\S.*", message="cannot be empty")
