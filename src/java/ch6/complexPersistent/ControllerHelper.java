@@ -90,7 +90,7 @@ public class ControllerHelper extends HelperBaseCh6 {
         }
         HibernateHelper.updateDB(data);
         List list = HibernateHelper.getListData(ComplexDataPersistent.class);
-        request.setAttribute("database", list);
+        request.setAttribute("somethingClever", list);
         return jspLocation("Process.jsp");
     }
     

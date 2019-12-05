@@ -9,7 +9,7 @@
              prefix="core" %>
    <P>Thank you for entering your data. Correct
     <ul>
-      <li>Secret Code: ${assist.data.secretCode}
+      <li>Secret Code: ${assist.data.password}
       <li>Level of Happiness: ${assist.data.happiness}
       <li>Extras:
       <ul>
@@ -36,9 +36,9 @@
       </p>
     </form>
     <table>
-      <core:forEach var="record" items="${database}">
+      <core:forEach var="record" items="${somethingClever}">
         <tr>
-          <td>${record.secretCode}
+          <td>${record.password}
           <td>${record.happiness}
           <td>
             <ul>

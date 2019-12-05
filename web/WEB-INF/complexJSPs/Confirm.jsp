@@ -8,7 +8,7 @@
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="core" %>
    <p>This is a simple HTML page that has a form in it.</p>
     <ul>
-      <li>Secret Code: ${assist.data.secretCode}
+      <li>Secret Code: ${assist.data.password}
       <li>Level of Happiness: ${assist.data.happiness}
       <li>Extras:
         <ul>

@@ -21,7 +21,7 @@ public class ComplexDataPersistent implements Serializable {
 
     private void setId(Long id) { this.id = id; }
 
-    protected String secretCode;
+    protected String password;
     protected int happiness;
     protected String[] extra;
     protected String comments;
@@ -31,12 +31,12 @@ public class ComplexDataPersistent implements Serializable {
     public ComplexDataPersistent() {
     }
       
-    public void setSecretCode(String code) {
-        this.secretCode = code;
+    public void setPassword(String code) {
+        this.password = code;
     }
     
-    public String getSecretCode() {
-        return secretCode;
+    public String getPassword() {
+        return password;
     }
     
     public void setHappiness(int happiness) {

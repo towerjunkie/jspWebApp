@@ -7,9 +7,9 @@
     <body>
         <p>This is a simple HTML page that has a form in it.</p>
         <FORM method="post" action="Controller">
-            Secret Code ${assist.errors.secretCode}
-            <INPUT type="password" name="secretCode" 
-                   value="${assist.data.secretCode}">
+            Password ${assist.errors.password}
+            <INPUT type="password" name="password" 
+                   value="${assist.data.password}">
             <BR>
             Level of Happiness:
             <INPUT type="radio" name="happiness" value="1" 
