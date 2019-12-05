@@ -105,7 +105,7 @@ public class ControllerHelper extends HelperBaseCh5 {
         HibernateHelper.updateDB(client);
         java.util.List list =
                 HibernateHelper.getListData(client.getClass());
-        request.setAttribute("somethingclever", list);
+        request.setAttribute("database", list);
         return jspLocation("process.jsp");
     }
     

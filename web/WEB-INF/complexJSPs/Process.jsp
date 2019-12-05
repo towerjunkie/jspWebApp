@@ -7,19 +7,29 @@
   <body>
    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" 
              prefix="core" %>
-   <P>Thank you for entering your data. Correct
-    <ul>
-      <li>Secret Code: ${assist.data.password}
+   <P>
+       <p>
+      
+        Your land use is:<strong>${assist.data.land}</strong> <br>
+        Your region is:<strong>${assist.data.region}</strong> <br>
+        Your crop type is:<strong>${assist.data.crop}</strong> <br>
+        Your acreage is:<strong>${assist.data.acres}</strong> <br>
+        Total amount of fertilizer:<strong>${assist.data.calculation}</strong> gal/acres.
      
-      <li>Extras:
+   
+    <p>
+    <ul>
+      <li>Customer ID: ${assist.data.password}
+     
+      <li>Crops:
       <ul>
-        <core:forEach var="element" items="${assist.data.extra}">
+        <core:forEach var="element" items="${assist.data.crop}">
           <li>${element}
         </core:forEach>
       </ul>
-      <li>Comments: ${assist.data.comments}
-      <li>Grade: ${data.grade}
-      <li>Lands:
+      <li>Acres: ${assist.data.acres}
+      <li>Region: ${assist.data.region}
+      <li>Land Use:
       <ul>
         <core:forEach var="element" 
                       items="${assist.data.land}">
@@ -35,20 +45,23 @@
       <input type="submit" name="editButton" value="New">
       </p>
     </form>
+      <form method="post" action="Controller">
+      <input type="Submit" name="viewButton" value="View">
+      </p>
+    </form>
     <table>
-      <core:forEach var="record" items="${somethingClever}">
+      <core:forEach var="record" items="${baseData}">
         <tr>
           <td>${record.password}
-          <td>${record.happiness}
           <td>
             <ul>
-              <core:forEach var="extra" 
-                            items="${record.extra}">
-                <li>${extra}
+              <core:forEach var="crop" 
+                            items="${record.crop}">
+                <li>${crop}
               </core:forEach>
             </ul>
-          <td>${record.comments}
-          <td>${record.grade}
+          <td>${record.acres}
+          <td>${record.region}
           <td>
             <ul>
               <core:forEach var="land" 

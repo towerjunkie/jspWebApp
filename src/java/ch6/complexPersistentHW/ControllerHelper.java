@@ -1,4 +1,4 @@
-package ch6.complexPersistent;
+package ch6.complexPersistentHW;
 
 
 import java.util.List;
@@ -12,8 +12,8 @@ import shared.HibernateHelper;
 
 public class ControllerHelper extends HelperBaseCh6 {
     
-    private ComplexDataPersistent data = 
-        new ComplexDataPersistent();
+    private ComplexDataPersistentHW data = 
+        new ComplexDataPersistentHW();
     
     public ControllerHelper(
             HttpServlet servlet,
@@ -32,10 +32,10 @@ public class ControllerHelper extends HelperBaseCh6 {
                 Boolean.parseBoolean(servlet.getInitParameter("create"));
 	if (create) {
 	    HibernateHelper
-		.createTable(ComplexDataPersistent.class);
+		.createTable(ComplexDataPersistentHW.class);
 	}     
 	HibernateHelper
-	    .initSessionFactory(ComplexDataPersistent.class);       
+	    .initSessionFactory(ComplexDataPersistentHW.class);       
     }
 
     public Object getData() {   
@@ -51,11 +51,10 @@ public class ControllerHelper extends HelperBaseCh6 {
     
     public void resetNullable() {
         //Checkbox
-        data.setExtra(null);
+        data.setCrop(null);
         //Mulitple select
         data.setLand(null);
         //Radio
-        data.setHappiness(0);
     }
 
     protected String jspLocation(String page) {
@@ -89,9 +88,21 @@ public class ControllerHelper extends HelperBaseCh6 {
             return jspLocation("Expired.jsp");
         }
         HibernateHelper.updateDB(data);
-        List list = HibernateHelper.getListData(ComplexDataPersistent.class);
-        request.setAttribute("somethingClever", list);
+        List list = HibernateHelper.getListData(ComplexDataPersistentHW.class);
+        request.setAttribute("baseData", list);
         return jspLocation("Process.jsp");
+    }
+    
+    @ButtonMethod(buttonName = "viewButton")
+    public String viewMethod() {
+        if (!isValid(data)) {
+            return jspLocation("view.jsp");
+        }
+        HibernateHelper.updateDB(data);
+        java.util.List list =
+                HibernateHelper.getListData(data.getClass());
+        request.setAttribute("baseData", list);
+        return jspLocation("view.jsp");
     }
     
     @Override

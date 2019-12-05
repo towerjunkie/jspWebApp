@@ -10,14 +10,14 @@
     <ul>
       <li>Secret Code: ${assist.data.password}
       
-      <li>Extras:
+      <li>Crops:
         <ul>
-        <core:forEach var="extra" items="${assist.data.extra}">
-          <li>${extra}
+        <core:forEach var="crop" items="${assist.data.crop}">
+          <li>${crop}
         </core:forEach>
         </ul>
-      <li>Comments: ${assist.data.comments}
-      <li>Grade: ${assist.data.grade}
+      <li>Acres: ${assist.data.acres}
+      <li>Region: ${assist.data.region}
       <li>Land Use:
         <ul>
         <core:forEach var="land" items="${assist.data.land}">

@@ -1,5 +1,5 @@
 
-package ch6.complexPersistent;
+package ch6.complexPersistentHW;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

@@ -15,44 +15,37 @@
             your crops and the region of the country in which you are.
 </p>
         <FORM method="post" action="Controller">
-            Password ${assist.errors.password}
+            Customer ID ${assist.errors.password}
             <INPUT type="password" name="password" 
                    value="${assist.data.password}">
             <BR>
-            
+            Crop Type: ${assist.errors.crop}
+            <INPUT type="checkbox" name="crop" value="feed" 
+                ${assist.checked.crop["feed"]}>Feed Crop
+            <INPUT type="checkbox" name="crop" value="food" 
+                ${assist.checked.crop["food"]}>Food Crop
+            <INPUT type="checkbox" name="crop" value="fiber" 
+                ${assist.checked.crop["fiber"]}>Fiber Crop
             <BR>
-            Preferred Extras: ${assist.errors.extra}
-            <INPUT type="checkbox" name="extra" value="sprinkles" 
-                ${assist.checked.extra["sprinkles"]}>Chocolate Sprinkles
-            <INPUT type="checkbox" name="extra" value="fudge" 
-                ${assist.checked.extra["fudge"]}>Hot Fudge
-            <INPUT type="checkbox" name="extra" value="cream" 
-                ${assist.checked.extra["cream"]}>Whipped Cream
+            Acres
+            <TEXTAREA name="acres">${assist.data.acres}</TEXTAREA>
             <BR>
-            Comments
-            <TEXTAREA name="comments">${assist.data.comments}</TEXTAREA>
-            <BR>
-            Grade 
-            <SELECT name="grade"> 
-                <OPTION value="4.00" ${assist.selected.grade["4.0"]}>A 
-                <OPTION value="3.67" ${assist.selected.grade["3.67"]}>A- 
-                <OPTION value="3.33" ${assist.selected.grade["3.33"]}>B+ 
-                <OPTION value="3.00" ${assist.selected.grade["3.0"]}>B 
-                <OPTION value="2.67" ${assist.selected.grade["2.67"]}>B- 
-                <OPTION value="2.33" ${assist.selected.grade["2.33"]}>C+ 
-                <OPTION value="2.00" ${assist.selected.grade["2.0"]}>C 
+            Region 
+            <SELECT name="region"> 
+                <OPTION value="4" ${assist.selected.region["4"]}>Southeast
+                <OPTION value="3" ${assist.selected.region["3"]}>Northeast 
+                <OPTION value="2" ${assist.selected.region["2"]}>Southwest
+                <OPTION value="1" ${assist.selected.region["1"]}>Northwest
+              
             </SELECT> 
             <BR>
             Land Use ${assist.errors.land}<br>
             <SELECT name="land" multiple size="2"> 
-                <OPTION value="heat" ${assist.selected.land["heat"]}>
-                    Heat 
-                <OPTION value="marlins" ${assist.selected.land["marlins"]}>
-                    Marlins 
-                <OPTION value="dolphins" ${assist.selected.land["dolphins"]}>
-                    Dolphins 
-                <OPTION value="panthers" ${assist.selected.land["panthers"]}>
-                    Panthers 
+                <OPTION value="commercial" ${assist.selected.land["commercial"]}>
+                    Commercial 
+                <OPTION value="residential" ${assist.selected.land["residential"]}>
+                    Residential
+               
             </SELECT> 
             <BR>
             <INPUT type="submit" name="confirmButton" value="Confirm">

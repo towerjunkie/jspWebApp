@@ -21,7 +21,7 @@
     <p>
         <%@ taglib uri="http://java.sun.com/jsp/jstl/core" 
              prefix="core" %>
-      <core:forEach var="row" items="${somethingclever}">
+      <core:forEach var="row" items="${database}">
         ${row.id}, 
         ${row.land}, 
         ${row.region},
