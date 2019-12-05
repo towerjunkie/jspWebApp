@@ -111,22 +111,19 @@
       <listener-class>shared.WebappListener</listener-class>
    </listener>
    
-   <servlet>
-        <servlet-name>hw4</servlet-name>
-        <servlet-class>hw4.Controller</servlet-class>
+ <servlet>
+        <servlet-name>ComplexPersistent</servlet-name>
+        <servlet-class>ch6.complexPersistent.Controller</servlet-class>
         <init-param>
             <param-name>create</param-name>
-            <param-value>true</param-value>
+            <param-value>false</param-value>
         </init-param>
     </servlet>
     <servlet-mapping>
-        <servlet-name>hw4</servlet-name>
-        <url-pattern>/hw4/Controller</url-pattern>
+        <servlet-name>ComplexPersistent</servlet-name>
+        <url-pattern>/ch6/complexPersistent/Controller</url-pattern>
     </servlet-mapping>
-    
-       <listener>
-      <listener-class>shared.WebappListener</listener-class>
-   </listener>
+
     
     
 </web-app>

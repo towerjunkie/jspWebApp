@@ -59,7 +59,7 @@ public class ControllerHelper extends HelperBaseCh6 {
     }
 
     protected String jspLocation(String page) {
-        return "/WEB-INF/classes/ch6/complexPersistent/" + page;
+        return "/WEB-INF/complexJSPs/" + page;
     }
     
     @ButtonMethod(buttonName="editButton", isDefault=true)
