@@ -8,19 +8,19 @@
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="core" %>
    <p>This is a simple HTML page that has a form in it.</p>
     <ul>
-      <li>Secret Code: ${helper.data.secretCode}
-      <li>Level of Happiness: ${helper.data.happiness}
+      <li>Secret Code: ${assist.data.secretCode}
+      <li>Level of Happiness: ${assist.data.happiness}
       <li>Extras:
         <ul>
-        <core:forEach var="extra" items="${helper.data.extra}">
+        <core:forEach var="extra" items="${assist.data.extra}">
           <li>${extra}
         </core:forEach>
         </ul>
-      <li>Comments: ${helper.data.comments}
-      <li>Grade: ${helper.data.grade}
+      <li>Comments: ${assist.data.comments}
+      <li>Grade: ${assist.data.grade}
       <li>Teams:
         <ul>
-        <core:forEach var="team" items="${helper.data.team}">
+        <core:forEach var="team" items="${assist.data.team}">
           <li>${team}
         </core:forEach>
         </ul>

@@ -9,20 +9,20 @@
              prefix="core" %>
    <P>Thank you for entering your data. Correct
     <ul>
-      <li>Secret Code: ${helper.data.secretCode}
-      <li>Level of Happiness: ${helper.data.happiness}
+      <li>Secret Code: ${assist.data.secretCode}
+      <li>Level of Happiness: ${assist.data.happiness}
       <li>Extras:
       <ul>
-        <core:forEach var="element" items="${helper.data.extra}">
+        <core:forEach var="element" items="${assist.data.extra}">
           <li>${element}
         </core:forEach>
       </ul>
-      <li>Comments: ${helper.data.comments}
+      <li>Comments: ${assist.data.comments}
       <li>Grade: ${data.grade}
       <li>Teams:
       <ul>
         <core:forEach var="element" 
-                      items="${helper.data.team}">
+                      items="${assist.data.team}">
           <li>${element}
         </core:forEach>
       </ul>

@@ -99,7 +99,7 @@ public class ControllerHelper extends HelperBaseCh6 {
         throws ServletException, java.io.IOException
     {      
         //Call the method with false to place a new helper in the session
-        addHelperToSession("helper", SessionData.IGNORE);
+        addHelperToSession("assist", SessionData.IGNORE);
 
         //Edit.jsp is the only page that will be displayed from a GET request.
         String address = editMethod();
@@ -114,7 +114,7 @@ public class ControllerHelper extends HelperBaseCh6 {
         throws ServletException, java.io.IOException 
     {           
         //Call the method with false to place a new helper in the session
-        addHelperToSession("helper", SessionData.READ);
+        addHelperToSession("assist", SessionData.READ);
 
         //Edit.jsp is the only page that will be displayed from a GET request.
         String address = executeButtonMethod();
