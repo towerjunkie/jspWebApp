@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Edit Page</title>
+  <link rel="stylesheet"
+              href="/styles/stylesheet.css"
+              type="text/css">
     </head>
     <body>
         <h1>Edit Page</h1>

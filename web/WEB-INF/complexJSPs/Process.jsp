@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Process Page</title>
+  <link rel="stylesheet"
+              href="/styles/stylesheet.css"
+              type="text/css">
   </head>
   <h1>Process Page</h1>
   <body>

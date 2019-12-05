@@ -65,6 +65,11 @@ public class ControllerHelper extends HelperBaseCh6 {
     public String editMethod() {
         return jspLocation("Edit.jsp");
     }
+    
+     @ButtonMethod(buttonName = "wishlistButton", isDefault = true)
+    public String wishlistMethod() {
+        return jspLocation("wishlist.jsp");
+    }
 
     @ButtonMethod(buttonName="confirmButton")
     public String confirmMethod() {
