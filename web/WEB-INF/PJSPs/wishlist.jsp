@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Expired
-    Created on : Nov 19, 2019, 7:15:07 PM
+    Document   : wishlist
+    Created on : Dec 3, 2019, 8:07:15 PM
     Author     : dllan
 --%>
 
@@ -9,21 +9,21 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Expired</title>
+        <title>Wishlist</title>
         <link rel="stylesheet"
               href="/styles/stylesheet.css"
               type="text/css">
     </head>
     <body>
-        <h1>Your page has expired.</h1>
-        Go back to the edit page:
-        <br>
+
+        <h1>Wishlist</h1>
+
         <form method="POST" action="Controller">
-             
-      <p>
-      Go back to the edit page:
-      <input type="submit" name="editButton" 
-                           value="Edit">
-    </form>
+        
+        <input type="Submit" name="editButton" value="Edit">
+
+        <input type="Submit" name="processButton" value="Process">
+        
+        </form>
     </body>
 </html>

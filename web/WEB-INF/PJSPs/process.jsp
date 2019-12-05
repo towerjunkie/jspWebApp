@@ -8,6 +8,7 @@
               type="text/css">
     </head>
     <body>
+        <h1></h1>
     <p>
       
         Your land use is:<strong>${assist.client.land}</strong> <br>
@@ -20,7 +21,7 @@
     <p>
         <%@ taglib uri="http://java.sun.com/jsp/jstl/core" 
              prefix="core" %>
-      <core:forEach var="row" items="${database}">
+      <core:forEach var="row" items="${somethingclever}">
         ${row.id}, 
         ${row.land}, 
         ${row.region},

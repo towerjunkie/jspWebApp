@@ -39,6 +39,8 @@
 
             <input type="Submit" name="processButton" value="Process">
             
+            <input type="Submit" name="wishlistButton" value="Wishlist">
+            
             
             
            

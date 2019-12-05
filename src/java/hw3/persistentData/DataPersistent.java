@@ -1,6 +1,7 @@
 
 package hw3.persistentData;
 
+import homework2.requestDataDefault;
 import java.io.Serializable;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -8,6 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.Transient;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 
 @Entity
 public class DataPersistent 
@@ -19,8 +22,11 @@ public class DataPersistent
     protected int region;
     protected double acres;
     protected double calculation;
+    protected Logger logger;
     
     public DataPersistent() {
+    logger = Logger.getLogger(requestDataDefault.class);
+    logger.setLevel (Level.INFO);
     }
 
     @Pattern(regexp=".*\\S.*", message="cannot be empty")

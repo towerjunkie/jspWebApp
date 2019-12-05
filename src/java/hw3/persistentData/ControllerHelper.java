@@ -76,8 +76,11 @@ public class ControllerHelper extends HelperBaseCh5 {
     public String editMethod() {
         return jspLocation("edit.jsp");
     }
-    
-    
+     @ButtonMethod(buttonName = "wishlistButton", isDefault = true)
+    public String wishlistMethod() {
+        return jspLocation("wishlist.jsp");
+    }
+
 
     @ButtonMethod(buttonName = "confirmButton")
     public String confirmMethod() {
@@ -102,7 +105,7 @@ public class ControllerHelper extends HelperBaseCh5 {
         HibernateHelper.updateDB(client);
         java.util.List list =
                 HibernateHelper.getListData(client.getClass());
-        request.setAttribute("database", list);
+        request.setAttribute("somethingclever", list);
         return jspLocation("process.jsp");
     }
     
