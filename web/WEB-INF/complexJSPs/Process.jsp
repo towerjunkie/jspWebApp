@@ -4,20 +4,10 @@
   <meta charset="utf-8">
   <title>Process Page</title>
   </head>
+  <h1>Process Page</h1>
   <body>
    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" 
              prefix="core" %>
-   <P>
-       <p>
-      
-        Your land use is:<strong>${assist.data.land}</strong> <br>
-        Your region is:<strong>${assist.data.region}</strong> <br>
-        Your crop type is:<strong>${assist.data.crop}</strong> <br>
-        Your acreage is:<strong>${assist.data.acres}</strong> <br>
-        Total amount of fertilizer:<strong>${assist.data.calculation}</strong> gal/acres.
-     
-   
-    <p>
     <ul>
       <li>Customer ID: ${assist.data.password}
      
@@ -36,6 +26,7 @@
           <li>${element}
         </core:forEach>
       </ul>
+      <li> Fertilizer:<strong>${assist.data.calculation}</strong> liter/acres.
     </ul>
     <form method="post" action="Controller">
       <input type="submit" name="editButton" value="Edit">
