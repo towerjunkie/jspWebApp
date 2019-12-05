@@ -10,7 +10,7 @@
    <P>Thank you for entering your data. Correct
     <ul>
       <li>Secret Code: ${assist.data.password}
-      <li>Level of Happiness: ${assist.data.happiness}
+     
       <li>Extras:
       <ul>
         <core:forEach var="element" items="${assist.data.extra}">
@@ -19,10 +19,10 @@
       </ul>
       <li>Comments: ${assist.data.comments}
       <li>Grade: ${data.grade}
-      <li>Teams:
+      <li>Lands:
       <ul>
         <core:forEach var="element" 
-                      items="${assist.data.team}">
+                      items="${assist.data.land}">
           <li>${element}
         </core:forEach>
       </ul>
@@ -51,9 +51,9 @@
           <td>${record.grade}
           <td>
             <ul>
-              <core:forEach var="team" 
-                            items="${record.team}">
-                <li>${team}
+              <core:forEach var="land" 
+                            items="${record.land}">
+                <li>${land}
               </core:forEach>
             </ul>
         </tr>

@@ -26,7 +26,7 @@ public class ComplexDataPersistent implements Serializable {
     protected String[] extra;
     protected String comments;
     protected double grade;
-    protected String[] team;
+    protected String[] land;
     
     public ComplexDataPersistent() {
     }
@@ -59,8 +59,8 @@ public class ComplexDataPersistent implements Serializable {
         this.grade = grade;
     }
     
-    public void setTeam(String[] team) {
-        this.team = team;
+    public void setLand(String[] land) {
+        this.land = land;
     }
     
     @SetByAttribute(type=AttributeType.CHECKED)
@@ -82,11 +82,11 @@ public class ComplexDataPersistent implements Serializable {
     }
  
     @ElementCollection
-    @IndexColumn(name="team_pos", base=0)
+    @IndexColumn(name="land_pos", base=0)
     @SetByAttribute(type=AttributeType.SELECTED)
-    @Size(min=0, max=3, message=": cannot select all teams.")
-    public String[] getTeam() {
-        return team;
+    @Size(min=0, max=3, message=": cannot select all lands.")
+    public String[] getLand() {
+        return land;
     }
 
 }

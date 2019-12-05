@@ -53,7 +53,7 @@ public class ControllerHelper extends HelperBaseCh6 {
         //Checkbox
         data.setExtra(null);
         //Mulitple select
-        data.setTeam(null);
+        data.setLand(null);
         //Radio
         data.setHappiness(0);
     }

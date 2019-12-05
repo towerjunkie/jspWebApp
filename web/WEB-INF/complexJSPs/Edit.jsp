@@ -5,19 +5,21 @@
   <title>Edit Page</title>
     </head>
     <body>
-        <p>This is a simple HTML page that has a form in it.</p>
+        <p>Give us some information about your operation</p>
+        <p> This is a tool for helping you find the right fertilizer for your business.
+            <br>
+            We specialize in three popular mixes of nitrogen, phosphorus and potassium.  
+            <br> 
+            Each mixture of these three fertilizers is specially formulated based on your usage
+            <br> 
+            your crops and the region of the country in which you are.
+</p>
         <FORM method="post" action="Controller">
             Password ${assist.errors.password}
             <INPUT type="password" name="password" 
                    value="${assist.data.password}">
             <BR>
-            Level of Happiness:
-            <INPUT type="radio" name="happiness" value="1" 
-                ${assist.checked.happiness["1"]}>Elated
-            <INPUT type="radio" name="happiness" value="2" 
-                ${assist.checked.happiness["2"]}>Ecstatic
-            <INPUT type="radio" name="happiness" value="3" 
-                ${assist.checked.happiness["3"]}>Joyous
+            
             <BR>
             Preferred Extras: ${assist.errors.extra}
             <INPUT type="checkbox" name="extra" value="sprinkles" 
@@ -41,15 +43,15 @@
                 <OPTION value="2.00" ${assist.selected.grade["2.0"]}>C 
             </SELECT> 
             <BR>
-            Team ${assist.errors.team}<br>
-            <SELECT name="team" multiple size="2"> 
-                <OPTION value="heat" ${assist.selected.team["heat"]}>
+            Land Use ${assist.errors.land}<br>
+            <SELECT name="land" multiple size="2"> 
+                <OPTION value="heat" ${assist.selected.land["heat"]}>
                     Heat 
-                <OPTION value="marlins" ${assist.selected.team["marlins"]}>
+                <OPTION value="marlins" ${assist.selected.land["marlins"]}>
                     Marlins 
-                <OPTION value="dolphins" ${assist.selected.team["dolphins"]}>
+                <OPTION value="dolphins" ${assist.selected.land["dolphins"]}>
                     Dolphins 
-                <OPTION value="panthers" ${assist.selected.team["panthers"]}>
+                <OPTION value="panthers" ${assist.selected.land["panthers"]}>
                     Panthers 
             </SELECT> 
             <BR>

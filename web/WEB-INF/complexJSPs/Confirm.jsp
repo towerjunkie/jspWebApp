@@ -9,7 +9,7 @@
    <p>This is a simple HTML page that has a form in it.</p>
     <ul>
       <li>Secret Code: ${assist.data.password}
-      <li>Level of Happiness: ${assist.data.happiness}
+      
       <li>Extras:
         <ul>
         <core:forEach var="extra" items="${assist.data.extra}">
@@ -18,10 +18,10 @@
         </ul>
       <li>Comments: ${assist.data.comments}
       <li>Grade: ${assist.data.grade}
-      <li>Teams:
+      <li>Land Use:
         <ul>
-        <core:forEach var="team" items="${assist.data.team}">
-          <li>${team}
+        <core:forEach var="land" items="${assist.data.land}">
+          <li>${land}
         </core:forEach>
         </ul>
     </ul>
