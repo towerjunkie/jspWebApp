@@ -21,7 +21,7 @@
         <FORM method="post" action="Controller">
             Customer ID ${assist.errors.password}
             <INPUT type="password" name="password" 
-                   value="${assist.data.password}">
+                   value="${assist.client.password}">
             <BR>
             Crop Type: ${assist.errors.crop}
             <INPUT type="checkbox" name="crop" value="feed" 
@@ -32,7 +32,7 @@
                 ${assist.checked.crop["fiber"]}>Fiber Crop
             <BR>
             Acres
-            <TEXTAREA name="acres">${assist.data.acres}</TEXTAREA>
+            <TEXTAREA name="acres">${assist.client.acres}</TEXTAREA>
             <BR>
             Region 
             <SELECT name="region"> 

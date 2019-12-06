@@ -1,5 +1,6 @@
 package ch6.complexPersistentHW;
 
+import homework2.requestDataDefault;
 import java.io.Serializable;
 import javax.persistence.ElementCollection;
 import javax.persistence.GeneratedValue;
@@ -11,6 +12,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.hibernate.annotations.IndexColumn;
 import shared.SetByAttribute;
@@ -40,6 +42,8 @@ public class ComplexDataPersistentHW implements Serializable {
     protected Logger logger;
 
     public ComplexDataPersistentHW() {
+    logger = Logger.getLogger(requestDataDefault.class);
+    logger.setLevel (Level.INFO);
     }
 
     public void setLand(String[] land) {

@@ -11,19 +11,19 @@
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="core" %>
    <h1>Confirm Page</h1>
     <ul>
-      <li>Username: ${assist.data.password}
+      <li>Username: ${assist.client.password}
       
       <li>Crops:
         <ul>
-        <core:forEach var="crop" items="${assist.data.crop}">
+        <core:forEach var="crop" items="${assist.client.crop}">
           <li>${crop}
         </core:forEach>
         </ul>
-      <li>Acres: ${assist.data.acres}
-      <li>Region: ${assist.data.region}
+      <li>Acres: ${assist.client.acres}
+      <li>Region: ${assist.client.region}
       <li>Land Use:
         <ul>
-        <core:forEach var="land" items="${assist.data.land}">
+        <core:forEach var="land" items="${assist.client.land}">
           <li>${land}
         </core:forEach>
         </ul>

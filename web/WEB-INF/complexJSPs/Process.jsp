@@ -12,24 +12,24 @@
    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" 
              prefix="core" %>
     <ul>
-      <li>Customer ID: ${assist.data.password}
+      <li>Customer ID: ${assist.client.password}
      
       <li>Crops:
       <ul>
-        <core:forEach var="element" items="${assist.data.crop}">
+        <core:forEach var="element" items="${assist.client.crop}">
           <li>${element}
         </core:forEach>
       </ul>
-      <li>Acres: ${assist.data.acres}
-      <li>Region: ${assist.data.region}
+      <li>Acres: ${assist.client.acres}
+      <li>Region: ${assist.client.region}
       <li>Land Use:
       <ul>
         <core:forEach var="element" 
-                      items="${assist.data.land}">
+                      items="${assist.client.land}">
           <li>${element}
         </core:forEach>
       </ul>
-      <li> Fertilizer:<strong>${assist.data.calculation}</strong> liter/acres.
+      <li> Fertilizer:<strong>${assist.client.calculation}</strong> liter/acres.
     </ul>
     <form method="post" action="Controller">
       <input type="submit" name="editButton" value="Edit">
