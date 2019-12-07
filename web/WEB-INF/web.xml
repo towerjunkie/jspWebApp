@@ -100,7 +100,7 @@
         </init-param>
         <init-param>
             <param-name>logLevel</param-name>
-            <param-value>INFO</param-value>
+            <param-value>ERROR</param-value>
         </init-param>
     </servlet>
     <servlet-mapping>
@@ -145,3 +145,5 @@
         <url-pattern>/ch6/complexPersistentHW/Controller</url-pattern>
     </servlet-mapping>
 </web-app>
+
+

@@ -22,7 +22,7 @@
                 <th>ID</th>
                 <th>Land Use</th>
                 <th>Crop Type</th>
-                <th>Region</th>
+                <th>Region</th>emca
                 <th>Acreage</th>
             </tr>
             <core:forEach var="row" items="${baseData}">

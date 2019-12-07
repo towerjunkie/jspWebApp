@@ -29,7 +29,7 @@
           <li>${element}
         </core:forEach>
       </ul>
-      <li> Fertilizer:<strong>${assist.client.calculation}</strong> liter/acres.
+      <li> Fertilizer:<strong>${assist.client.calculation}</strong> liter
     </ul>
     <form method="post" action="Controller">
       <input type="submit" name="editButton" value="Edit">
@@ -44,7 +44,7 @@
       </p>
     </form>
     <table>
-      <core:forEach var="record" items="${baseData}">
+      <core:forEach var="record" items="${base}">
         <tr>
           <td>${record.password}
           <td>
