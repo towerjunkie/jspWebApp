@@ -12,7 +12,7 @@
    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" 
              prefix="core" %>
     <ul>
-      <li>Customer ID: ${assist.client.password}
+      <li>Ticket Number: ${assist.client.password}
      
       <li>Crops:
       <ul>

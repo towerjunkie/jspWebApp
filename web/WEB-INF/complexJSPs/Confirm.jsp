@@ -11,7 +11,7 @@
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="core" %>
    <h1>Confirm Page</h1>
     <ul>
-      <li>Username: ${assist.client.password}
+      <li>Ticket Number ${assist.client.password}
       
       <li>Crops:
         <ul>

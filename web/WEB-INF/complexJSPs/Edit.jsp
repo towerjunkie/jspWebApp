@@ -11,6 +11,7 @@
         
         <h1>Edit Page</h1>
         <p>Give us some information about your operation</p>
+        
         <p> This is a tool for helping you find the right fertilizer for your business.
             <br>
             We specialize in three popular mixes of nitrogen, phosphorus and potassium.  
@@ -20,7 +21,7 @@
             your crops and the region of the country in which you are.
 </p>
         <FORM method="post" action="Controller">
-            Customer ID ${assist.errors.password}
+            Ticket Number ${assist.errors.password}
             <INPUT type="password" name="password" 
                    value="${assist.client.password}">
             <BR>

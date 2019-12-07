@@ -17,9 +17,14 @@ import org.apache.log4j.Logger;
 import org.hibernate.annotations.IndexColumn;
 import shared.SetByAttribute;
 import shared.AttributeType;
+import java.io.Serializable;
+import javax.validation.constraints.*;
+import javax.persistence.*;
 
 @Entity
-public class ComplexDataPersistentHW implements Serializable {
+public class ComplexDataPersistentHW 
+        
+        implements Serializable {
 
     protected Long id;
 
